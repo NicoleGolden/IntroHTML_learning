@@ -1,0 +1,594 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>My Page Title</title>
+        <link rel="icon" type="image/x-icon" href="/Image/smile.png">
+    </head>
+    
+    <body>
+
+    
+        <!--
+            Sample texts here. 
+        -->
+        <h1 id="H1">This is heading 1.</h1>
+        <h2>This is heading 2.</h2>
+        <h3>This is heading 3.</h3>
+        <h4>This is heading 4.</h4>
+        <h5>This is heading 5.</h5>
+        <h6>This is heading 6.</h6>
+        <p>This is a paragraph.</p>
+
+        
+        <!--
+            1. HTML attributes.
+        -->
+        <p>All HTML elements can have attributes.<br>
+            Attributes provide additional information about elements.<br>
+            Attributes are always specified in the start tag<br>
+            Attributes usually come in name/value pairs like: name="value"
+        </p>
+        
+        <!--
+            (1) `href` attribute for hyperlink.
+        -->
+        <a href="https://www.w3schools.com">This is a website link.</a><br>
+        
+        <!--
+            (2) `scr, alt, width, height` attributes for image
+        -->
+        <img src="/image/w3schools.jpeg" alt="W3Schools.com" width="104" height="142">
+        
+        <!--
+            (3) style `color, font-size, background-color, font-family, text-align, border` attribute for text 
+        -->
+        <p style="color:darkgoldenrod; 
+                  font-size:200%;
+                  background-color:powderblue;
+                  font-family:verdana;
+                  text-align:center;
+                  border:2px solid white;">
+            This is a dark golden paragraph.
+        </p>
+        
+        <!--
+            (4) `lang` attribute for `html`
+            <html lang="en-US">
+        -->
+        
+        <!--
+            (5) `title` attribute for paragraph (The value of the title attribute will be displayed as a tooltip when you mouse over the element)
+        -->
+        <p title="I'm a tooltip">This is a paragraph with "title" attribute.</p>
+
+        
+        <!--
+            2. HTML line breaks 
+        -->
+
+        <!--
+            (1) Use `hr` (horizontal line) to separate contents. 
+        -->
+        <h1>Book of Love</h1>
+        <p>This is one pragraph.</p>
+        <hr>
+
+        <h2>Chapter 1</h2>
+        <p>This is another pragraph.</p>
+ 
+
+        <!--
+            (2) Use `pre` element to define preformatted text.
+        -->
+        <pre>
+        My Bonnie lies over the ocean.
+        My Bonnie lies over the sea.
+        My Bonnie lies over the ocean.
+        Oh, bring back my Bonnie to me.
+        </pre>
+
+        <!--
+            3. Text formatting.
+        -->
+        <b>1. Bold texts</b><br>
+        <strong>2. Important texts</strong><br>
+        <em>3. Emphasized texts</em><br>
+        <i>4. Italic texts</i><br>
+        <small>5. Small texts</small><br>
+        <del>6. Deleted texts</del><br>
+        <ins>7. Inserted texts</ins><br>
+        8. X<sup>supersript</sup><br>
+        9. X<sub>subscript</sub><br>
+        <mark>10. marked (or highlighted) texts</mark>
+
+        <!--
+            4. Quotes
+        -->        
+
+        <!--
+            (1) Long quotes `blockquote`
+            This isolates the quoted text in a separate block.
+        -->
+        <p>Here is a quote from WWF's website:</p>
+        <blockquote cite="http://www.worldwildlife.org/who/index.html">
+            For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+        </blockquote>
+
+        <!--
+            (2) Short quotes `q`
+            This puts quotation marks around the text. 
+        -->
+        <p>WWF's goal is to: 
+            <q>Build a future where people live in harmony with nature.</q>
+        </p>
+
+        <!--
+            5. Abbreviations `abbr`
+        -->   
+        <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+        <!--
+            6. Address 	`address`
+            <address> element usually renders in italic, and browsers will always add a line break before and after the <address> element.
+        -->  
+        <address>
+            Written by John Doe.<br> 
+            Visit us at:<br>
+            Example.com<br>
+            Box 564, Disneyland<br>
+            USA
+        </address>
+
+        <!--
+            7. Cite `cite`
+            The cited text will be intalic.
+        -->  
+        <p>
+            <cite>The Scream</cite> by Edvard Munch. Painted in 1893.
+        </p>
+
+        <!--
+            8. Reverse text direction `bdo`
+        -->  
+        <bdo dir="rtl">
+            This text will be written from right to left
+        </bdo>
+
+        <!--
+            9. Comments
+            (1) Just add comments
+        -->  
+  
+        <!--
+            (2) Use comments to hide a block of code temporarily 
+        --> 
+        <!-- <p>This is paragraph being put in a comment.</p> -->
+        <!--
+            <p>Look at this cool image:</p>
+            <img border="0" src="pic_trulli.jpg" alt="Trulli">
+        -->
+
+        <!--
+            (3) Use comments to hide inline code 
+        --> 
+        <p>This <!-- great text --> is a paragraph.</p>
+
+        <!--
+            10. Colors
+        -->  
+        
+        <!--
+            (1) How to specify colors
+            Colors can be specified by 6 methods:
+
+            (i) Standard color names
+            Here are 140 standard color names: https://www.w3schools.com/colors/colors_names.asp
+
+            (ii) RGB
+            * An RGB color value represents RED, GREEN, and BLUE light sources. The syntax is `rgb(red, green, blue)
+            * An RGBA color value is an extension of RGB with an Alpha channel (opacity). The syntax is `rgba(red, green, blue, alpha)`, where alpha = 0 means fully transparent, and alpha = 1 is not transparent at all.
+            * Each parameter (red, green, and blue) defines the intensity of the color with a value between 0 and 255. This means that there are `256 times 256 time 256` = 16777216 possible colors!
+            * Example 1: `rgb(255, 0, 0)` is red, since red is set to its highest value (255), and the other two (green and blue) are set to 0.
+            * Example 2: `rgb(0, 255, 0)` is green.
+            * Example 3: `rgb(0, 0, 255)` is blue.
+            * Example 4: `rgb(0, 0, 0)` is black.
+            * Example 5: `rgb(255, 255, 255)` is white.
+            * Example 6: `rgba(255, 0, 0, 0.5)` is red with 50% transparency.
+
+            (iii) HEX
+            * A hexadecimal color is specified with: #RRGGBB, where the RR (red), GG (green) and BB (blue) hexadecimal integers specify the components of the color.
+            * The syntex is `rrggbb`, where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255).
+            * Example 1: `#ff0000` is red.
+            * Example 2: `#00ff00` is green.
+            * Example 3: `#0000ff` is blue.
+            * Example 4: `#000000` is black.
+            * Example 5: `#ffffff` is white.
+
+            (iv) HSL
+            * HSL stands for hue, saturation, and lightness.
+            * HSLA color values are an extension of HSL with an Alpha channel (opacity).
+            * The syntax is `hsl(hue, saturation, lightness)`, where:
+                - Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.
+                - Saturation is a percentage value, 0% means a shade of gray, and 100% is the full color.
+                - Lightness is also a percentage value, 0% is black, and 100% is white.
+            * Example 1: hsl(0, 100%, 50%) is red.
+            * Example 2: hsl(120, 100%, 50%) is green.
+            * Example 3: hsl(240, 100%, 50%) is blue.
+            * Example 4: hsl(0, 100%, 0%) is black.
+            * Example 5: hsl(0, 100%, 100%) is white.
+            * Example 6: hsla(0, 100%, 50%, 0.5) is red with 50% transparency.
+        -->  
+        
+        <!--
+            (2) Background colors: 
+            Use `background-color` attribute
+        -->  
+        <h6 style="background-color:Tomato;">...</h6>
+        <h6 style="background-color:rgb(255, 99, 71);">...</h6>
+        <h6 style="background-color:rgba(255, 99, 71, 0.1);">...</h6>
+        <h6 style="background-color:#ff6347;">...</h6>
+        <h6 style="background-color:hsl(9, 100%, 64%);">...</h6>
+        <h6 style="background-color:hsla(9, 100%, 64%, 0.5);">...</h6>
+
+        <!--
+            (3) Text colors: 
+            Use `color` attribute
+        -->  
+
+        <p style="color:DodgerBlue;">Lorem ipsum...</p>
+
+        <!--
+            (4) Border colors: 
+            Use `border` attribute
+        -->  
+        <h1 style="border:2px solid Tomato;">Hello World</h1>
+
+        <!--
+            11. CSS
+            * Cascading Style Sheets (CSS) is used to format the layout of a webpage.
+
+            * With CSS, you can control the color, font, the size of text, the spacing between elements, how elements are positioned and laid out, what background images or background colors are to be used, different displays for different devices and screen sizes, and much more!
+        --> 
+        
+        <!--
+            (1) CSS can be added to HTML documents in 3 ways:
+                (A) Inline - by using the style attribute inside HTML elements
+                (B) Internal - by using a `<style>`element in the `<head>` section
+                (C) External - by using a `<link>` element to link to an external CSS file. This is the most common way.
+                (D) Weblink
+            
+            * Example 1: Inline CSS, you can see in this file. 
+            * Example 2: Internal CSS, see file `CSS internal.html` file.
+            * Example 3: External CSS, see file `CSS external.html` file. 
+            * Example 4: Weblink CSS, see file `CSS weblink.html` file.
+
+        --> 
+        
+        <!--
+            (2) CSS padding
+            CSS padding defines a padding (space) between the text and the border.
+
+            * Example: 
+                    p {
+                        padding: 30px;
+                    }
+        --> 
+        
+        <!--
+            (3) CSS margin
+            The CSS margin property defines a margin (space) outside the border.
+            
+            * Example: 
+                    p {
+                        margin: 50px;
+                    }
+        --> 
+
+        <!--
+            12. Hyperlinks
+            * Syntax is `<a href="url">link text</a>`
+        --> 
+        
+        <!-- 
+            (1) Hyperlink: open in current browser window by default
+            * By default, the linked page will be displayed in the current browser window. 
+
+            Example: Open link in current browser window. 
+        --> 
+        <a href="https://www.w3schools.com/">Visit W3Schools.com in current page!</a><br>
+
+
+        <!-- 
+            (2) Hyperlink: open in a new tab
+            * To change this, you must specify another target for the link. 
+            * Use `target="_blank"` to open the linked document in a new tab.
+
+            Example: Open link in a new tab.
+        --> 
+        <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools.com in a new tab!</a>
+
+        <!-- 
+            (2) Absolute URLs vs. Relative URLs
+            
+            Example 1: absolute URL
+        --> 
+        <p><a href="https://www.google.com/">Google: absolute URL.</a></p><br>
+        
+        <!-- 
+            Example 2: relative URL
+            <p><a href="html_images.asp">HTML Images</a></p>
+        --> 
+        
+        <!-- 
+            (3) Image as hyperlink  
+            * To use an image as a link, just put the <img> tag inside the <a> tag.
+
+            Example 1: 
+            <a href="default.asp">
+                <img src="smiley.gif" 
+                     alt="HTML tutorial" 
+                     style="width:42px;height:42px;">
+            </a>
+
+            Since we don't have the "default.asp" file, use the example below.
+        --> 
+        <a href="https://www.google.com/">
+            <img src="/Users/nicolegolden/Documents/1.\ Data\ Science/12_html/Brackets/image/smile.png" 
+                 alt="Google page"
+                 style="width:42px;height:42px;">
+        </a><br>
+        
+        <!-- 
+            (4) Email as hyperlink 
+            Add "mailto" after the `href` attribute.
+        --> 
+        <a href="mailto:support@imperfectfoods.com">Send email here.</a><br><br>
+        
+        
+        <!-- 
+            (5) Button as hyperlink 
+
+            Example 1:
+            <button onclick="document.location='default.asp'">HTML Tutorial</button>
+
+            Since we don't have "default.asp" file, see example below.
+        --> 
+        <button onclick="document.location='https://www.w3schools.com/html/html_links.asp'">See HTML Tutorial</button><br><br>
+
+        <!-- 
+            (6) Hyperlink with title
+        --> 
+        <a href="https://www.w3schools.com/html/" 
+           title="Go to W3Schools HTML section">Visit our HTML Tutorial
+        </a>
+        
+        <!-- 
+            (7) Hyperlink colors
+            
+            HTML default link colors
+            * An unvisited link is underlined and blue
+            * A visited link is underlined and purple
+            * An active link is underlined and red
+
+            We can change HTML link colors using CSS
+            Example: 
+            a:link {
+                    color: green; 
+                    background-color: transparent; 
+                    text-decoration: none;
+            }
+
+            See `styles.css` for CSS definitions.
+            See `CSS external.html` for application.
+        --> 
+        
+        <!-- 
+            (8) Hyperlink button
+            A link can also be styled as a button, by using CSS.
+
+            Example:
+            a:hover, a:active {
+                                background-color: red;
+            }
+        
+        --> 
+        
+        <!--
+            (9). Bookmarks
+            * HTML links can be used to create bookmarks, so that readers can jump to specific parts of a web page.
+
+            * Bookmarks can be useful if a web page is very long.
+
+            * To create a bookmark - first create the bookmark, then add a link to it. When the link is clicked, the page will scroll down or up to the location with the bookmark. You can also add a link to a bookmark on another page.
+
+            * Example: 
+            Step 1: First, use the id attribute to create a bookmark:
+            <h2 id="C4">Chapter 4</h2>
+
+            Step 2: add a link to the bookmark ("Jump to Chapter 4"), from within the same page:
+            <a href="#C4">Jump to Chapter 4</a>
+
+            Optional Step: You can also add a link to a bookmark on another page:
+            <a href="html_demo.html#C4">Jump to Chapter 4</a>
+        --> 
+        <p>Here are some contents from Chapter 4. Next, we can use the bookmark to jump back to chapter 4 for reader's convenience.Here are some contents from Chapter 4. Next, we can use the bookmark to jump back to chapter 4 for reader's convenience.Here are some contents from Chapter 4. Next, we can use the bookmark to jump back to chapter 4 for reader's convenience.Here are some contents from Chapter 4. Next, we can use the bookmark to jump back to chapter 4 for reader's convenience.Here are some contents from Chapter 4. Next, we can use the bookmark to jump back to chapter 4 for reader's convenience.Here are some contents from Chapter 4. Next, we can use the bookmark to jump back to chapter 4 for reader's convenience.<br>
+        We can jump to Heading 1 in the beginning of this webpage using this bookmark.<br><br>
+        <a href="#H1">Jump to Beginning.</a><br>
+        
+        <!--
+            13. Images
+            (1) Common Image Formats
+            Abbreviation    File Format	File                    Extension
+            APNG	        Animated Portable Network Graphics	.apng
+            GIF	            Graphics Interchange Format	        .gif
+            ICO	            Microsoft Icon	                    .ico, .cur
+            JPEG	        Joint Photographic Expert           .jpg, .jpeg, .pjp     
+                            Group image	                        .jfif, .pjpeg
+            PNG	            Portable Network Graphics	        .png
+            SVG	            Scalable Vector Graphics	        .svg
+        --> 
+
+        <!--
+            (2) Use `width, height, style` attributes
+        --> 
+        <img src="image/w3schools.jpeg" 
+             alt="w3schools" 
+             style="width:128px;height:128px;">
+
+        
+        <!--
+            (3). Image floating
+            * Float property to let the image float to the right or to the left of a text
+        --> 
+        <img src="image/w3schools.jpeg" 
+             alt="w3schools" 
+             style="float:right;width:128px;height:128px;"><br>
+        
+        <!--
+            (4). Image map
+            * With HTML image maps, you can create clickable areas on an image.
+            
+            * The HTML <map> tag defines an image map. An image map is an image with clickable areas. The areas are defined with one or more <area> tags.
+        --> 
+            <a href="https://www.w3schools.com/html/html_images_imagemap.asp">Read image map later.</a><br>
+            <a href="https://www.w3schools.com/html/html_images_background.asp">Read background image later.</a><br>
+            <a href="https://www.w3schools.com/html/html_images_picture.asp">Read picture element later.</a>
+            
+        <!--
+            14. HTML favicon
+            * A favicon is a small image displayed next to the page title in the browser tab.
+            
+            * Go to <head> to see the setting.  
+
+            * Popular browsers favicon support image types: 
+            ico, png, gif, jpeg, svg
+        --> 
+        
+        <!--
+            15. List
+            (1) Unordered list (default list style is a circle)
+            The syntax is: 
+            <ul>
+                <li> </li>
+            </ul>
+        --> 
+       <ul>
+           <li>Coffee</li>
+           <li>Tea</li>  
+           <li>Milk</li>
+        </ul>     
+       
+        <!--
+            (2) Unordered list: change style
+            * Syntax `<ul style="list-style-type:disc;">`
+
+            * The styles include: `disc, circle, square, none`
+        --> 
+        <ul style="list-style-type:square;">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+        
+        <!--
+            (3) Unordered list: nested
+        --> 
+        <ul>
+            <li>Coffee</li>
+            <li>Tea
+                <ul>
+                    <li>Black tea</li>
+                    <li>Green tea</li>
+                </ul>
+            </li>
+            <li>Milk</li>
+        </ul>
+        
+        <!--
+            (4) Horizontal List with CSS
+            See `styles.css` for details
+        --> 
+        
+        <!--
+            (5) Ordered list: default 
+            The syntax is: 
+            <ol>
+                <li> </li>
+            </ol>
+        --> 
+       <ol>
+           <li>Coffee</li>
+           <li>Tea</li>  
+           <li>Milk</li>
+        </ol>  
+
+        <!--
+            (6) Ordered list: specify listing type 
+            
+            Type	    Description
+            type="1"    numbered with numbers (default)
+            type="A"    numbered with uppercase letters
+            type="a"	numbered with lowercase letters
+            type="I"	numbered with uppercase roman number
+            type="i"	numbered with lowercase roman numbers
+        --> 
+        <ol type="I">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+        
+        <!--
+            (7) Ordered list: controlled listing
+            Use `start` attribute
+        --> 
+        <ol start="50">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+        
+        <!--
+            (8) Ordered list: nested
+        --> 
+        <ol>
+            <li>Coffee</li>
+            <li>Tea
+                <ol>
+                    <li>Black tea</li>
+                    <li>Green tea</li>
+                </ol>
+            </li>
+            <li>Milk</li>
+        </ol>
+        
+        
+        <!--
+            (9) List with description
+            The syntax is: 
+            <dl>
+                <dt> </dt>
+                <dd> </dd>
+            </dl>
+        --> 
+        <dl>
+            <dt>Coffee</dt>
+            <dd>- black hot drink</dd>
+            <dt>Milk</dt>
+            <dd>- white cold drink</dd>
+        </dl>
+        
+        
+        <!--
+            16. Tables
+           
+        --> 
+            
+            
+            
+            
+            
+
+    </body>
+</html>

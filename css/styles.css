@@ -1,0 +1,103 @@
+/* Place your CSS styles in this file */
+
+h1, h2, h3, h4 {
+  color: #264d73;
+  line-height:120%;
+}
+
+h4 {
+  font-weight: normal;
+}
+
+p {
+  text-align: justify;
+  font-size: 14pt;
+}
+
+body {
+  margin-left: 20em;
+  margin-right: 20em;
+  margin-top: 7em;
+  margin-bottom: 7em;
+  line-height:180%;
+  font-family: Computer Modern;
+}
+
+/* Define a simply hyperlink style */
+a:link {
+  color: green; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+/* Define hyperlink button style */
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+
+
+/*  Use CSS to style the list horizontally, to create a navigation menu */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+</style>
+</head>
+<body>
+
+<h2>Navigation Menu</h2>
+<p>In this example, we use CSS to style the list horizontally, to create a navigation menu:</p>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
